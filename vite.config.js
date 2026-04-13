@@ -4,6 +4,7 @@ import {dirname, resolve} from "path";
 import { resolveSoa } from "dns";
 
 export default defineConfig({
+    base: '/Honline-Ecommerce-Store/',
     build:{
         rollupOptions: {
             input:{
