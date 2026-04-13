@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>Ecommerce Website</title>
+
+</head>
+<body class="home">
+  <header class="section-navbar">
+    <section class="top-txt">
+      <div class="head_container">
+        <p class="head_text">Free shipping, 30-day return or refund guarantee.</p>
+      </div>
+      <div class="sign_in_up">
+        <a href="#">SIGN IN</a>
+        <a href="#">SIGN UP</a>
+      </div>
+    </section>
+    <div class="main-container">
+     <div class="navbar-brand">
+      <a href="index.html"> <img src="src/logo.png" class="logo" width="120px" height="auto"></a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li class="nav-item">
+          <a href="/" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="addTocart.html" class="nav-cart" id="cartValue"> <i class="fa-solid fa-cart-arrow-down">0</i></a>
+        </li>
+      </ul>
+    </nav>
+
+     
+
+    </div>
+  </header>
+
+  <!-- Home Hero Section Start -->
+  <section class="main-section-hero">
+    <div class="main-container-grid">
+      <div class="main-section-hero-content">
+        <p class="main-hero-subheading">EXPLORE THE LATEST IN TECH INDUSTRIES </p>
+        <h1 class="main-hero-heading">Your Destination for Cutting-Edge Gadgets !</h1>
+        <p class="main-hero-para">Welcome to Thapa eComStore, your ultimate destination for
+           cutting-edge gadgets! Explore the latest in tech innovation and style with us.
+           Shop now and discover a world of possibilities!</p>
+           <!-- <div> -->
+            <button class="main-hero-btn">
+           <a href="products.html" class="hero-btn">Explore Our Products</a>
+            </button> 
+           <!-- </div> -->
+       </div>
+
+      <div class="main-section-hero-img"> <figure><img src="public/images/hero.png.png" ></figure> </div>
+    </div>
+    <!-- <img src="public/images/wave-haikei.png"  class="waves">
+    <img src="public/images/wave-haikei (1).png" class="waves1" > -->
+  </section>
+   <!-- Home Hero Section End --> 
+
+  <!-- Start Our Product Section -->
+
+<!-- <section class="section-products">
+  <div class="container-p">
+    <h2 class="section-common-heading">Checkout The Online Store</h2>
+  </div>
+
+  <section class="container-p">
+    <div id="productContainer"></div>
+  </section>
+</section> -->
+
+<!-- Start Product Template Section -->
+
+<!-- <template id="productTemplate">
+  <div class="pro-cards" id="cardValue">
+    <article class="information [pro-card]">
+      <span class="category"></span>
+      <div class="img-container">
+        <img class="pro-img" src="" alt="" />
+      </div>
+      <h2 class="pro-name"></h2>
+      <div class="pro-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="pro-des"></p>
+
+      <div class="productPriceElement">
+        <p class="productprice"></p>
+        <p class="productactualprice"></p>
+      </div>
+
+      <div class="productStockElement">
+        <p class="productProperty">Total Stack Availability:</p>
+        <p class="productStock"></p>
+      </div>
+
+      <div class="productQuantityElement">
+        <p class="productProperty">Quantity(Pieces)</p>
+        <div class="stockElement">
+          <button class="cartIncrement">+</button>
+          <P class="productQuantity">1</P>
+          <button class="cartDecrement">-</button>
+        </div>
+      </div>
+      <button class="Add-To-Cart_btn">
+        <i class="fa-solid fa-cart-arrow-down"></i> Add To Cart
+      </button>
+    </article>
+  </div>
+</template> -->
+
+<!-- End Product Template Section -->
+ 
+
+
+  <!-- End Our Product  Section -->
+
+
+
+  <!-- Lower Hero-Cards Start -->
+  <section class="lower-hero">
+    <div class="hero-card">
+    <div class="offers">
+      <p class="sale-heading">NEW YEAR SALE</p>
+      <h3 class="sale-subheading">Get and Extra 50% Off</h3>
+      <a href="#">SHOP NOW</a>
+    </div>
+    <div class="sale-img">
+       <img src="public/images/laptop2.png.png" width="95%">
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="offers">
+      <p class="sale-heading">NEW YEAR SALE</p>
+      <h3 class="sale-subheading">40% Discount on Speakers</h3>
+      <a href="#">SHOP NOW</a>
+    </div>
+    <div class="sale-img">
+       <img src="public/images/headphone2.png.png" width="90%">
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="offers">
+      <p class="sale-heading">NEW YEAR SALE</p>
+      <h3 class="sale-subheading">Get and Extra 50% Off</h3>
+      <a href="#" class="shop">SHOP NOW</a>
+    </div>
+    <div class="sale-img">
+       <img src="public/images/mobiles.png.png" width="90%">
+    </div>
+  </div>
+  </section>
+  <!-- Lower Hero-Cards End -->
+
+  <!-- advantages start -->
+ <section class="our-advantages">
+
+  <div class="adv">
+      <i  class=" icon fa-regular fa-van-shuttle"></i>
+      <div>
+      <p class="adv-heading">worldwide shipping</p>
+      <p class="adv-subheading">order above $100</p>
+    </div>
+  </div>
+    <div class="adv">
+      <i class="icon  fa-solid fa-arrow-rotate-right"></i>
+      <div>
+      <p class="adv-heading">Easy 30 Day Returns</p>
+      <p class="adv-subheading">Back Returns in 7 Days</p>
+    </div>
+  </div>
+    <div class="adv">
+      <i class=" icon fa-regular fa-money-bill-trend-up"></i>
+      <div>
+      <p class="adv-heading">money back guarantee</p>
+      <p class="adv-subheading">guarantee with in 30-Days</p>
+    </div>
+  </div>
+    <div class="adv">
+      <i class="icon  fa-solid fa-headphones"></i>
+      <div>
+      <p class="adv-heading">Easy Online Support</p>
+      <p class="adv-subheading">24/7 Any time support</p>
+    </div>
+  </div>
+
+ </section>
+ <!-- advantages start -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Why Choose Section  Start-->
+  <section class="choose">
+    <h2 class="choose-heading">Why Choose H, The Online Store</h2>
+    <p class="choose-para">Choose Honline Hub for a holistic, enriching Buying experience that empowers you to achieve unforgettable Memories.</p>
+  </section>
+  <!-- Why Choose Section  End-->
+
+  <section class="features-container">
+    <div class="feature-column left-align"> 
+      <div class="feature-item">
+        <span class="step-number">1</span>
+        <h3>Wide Selection</h3>
+        <p>Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+      </div>
+      
+      <div class="feature-item">
+        <span class="step-number">1</span>
+        <h3>Wide Selection</h3>
+        <p>Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="step-number">1</span>
+        <h3>Wide Selection</h3>
+        <p>Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+      </div>
+    </div>
+
+    <div class="center-illustration">
+      <div class="circle-bg">
+        <img src="public/images/ecompost.png.png" width="20%">
+      </div>
+    </div>
+
+    <div class="feature-column right-align">
+      <div class="feature-item">
+        <span class="step-number">4</span>
+        <h3>Wide Selection</h3>
+        <p>Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="step-number">4</span>
+        <h3>Wide Selection</h3>
+        <p>Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="step-number">4</span>
+        <h3>Wide Selection</h3>
+        <p>Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer-sec">
+    
+    <div class="foot1">
+      <a href="#"><img src="src/logo.png"></a>
+      <p class="foot-para">Welcome to Honline, your ultimate destination for cutting-edge gadgets!</p>
+    </div>
+
+    <div class="same-foot">
+    <div class="foot2">
+
+      <h6>SHOPPING</h6>
+      <a href="#">Computer Store</a>
+      <a>LapTop Store</a>
+      <a>Accessories</a>
+      <a>sales & Discount</a>
+     
+    
+    </div>
+
+    <div class="foot2">
+      
+      <h6>SHOPPING</h6>
+      <a href="#">Contact Us</a>
+      <a href="#">Payment Method</a>
+      <a href="#">Delivery</a>
+      <a href="#">Return and Exchange</a>
+     
+    
+    </div>
+  </div>
+
+  <div class="foot3">
+  <h5>NEWSLETTER</h5>
+      <p>Be the first to know about new
+        arrivals, sales & promos!</p>
+    </div>
+ 
+
+  </footer>
+  
+
+  <script type="module" src="./src/main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/addToCart.css">
+  <title>Ecommerce Website</title>
+  <style>
+
+/* RESET */
+ 
+  </style> 
+</head>
+
+<body class="cart-page">
+  <!-- header start -->
+  <header class="section-navbar">
+    <section class="top-txt">
+      <div class="head_container">
+        <p class="head_text">Free shipping, 30-day return or refund guarantee.</p>
+      </div>
+      <div class="sign_in_up">
+        <a href="#">SIGN IN</a>
+        <a href="#">SIGN UP</a>
+      </div>
+    </section>
+    <div class="container">
+      <div class="navbar-brand1">
+        <a href="index.html"> <img src="src/logo.png" class="logo" width="120px" height="auto"></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class="nav-item1">
+            <a href="/" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item1">
+            <a href="about.html" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item1">
+            <a href="product.html" class="nav-link">PRODUCTS</a>
+          </li>
+          <li class="nav-item1">
+            <a href="contact.html" class="nav-link">CONTACT</a>
+          </li>
+
+          <li class="nav-item1">
+            <a href="addTocart.html" class="nav-cart" id="cartValue"> <i class="fa-solid fa-cart-arrow-down">0</i></a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main cart Elements Start-->
+  <main class="addToCartElement">
+    <div class="container2">
+      <section id="productCartContainer"></section>
+
+      <template id="productCartTemplate">
+        <div class="cards" id="cardValue">
+          <article id="information">
+            <div>
+              <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+              <img class="productImg" src="" alt="">
+            </div>
+            <div>
+            <h2 class="productName"></h2>
+            </div>
+            <div>
+            <p class="productPrice"></p>
+            </div>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity" data-quantity="1">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+
+            <button class="Add-To-Cart_btn remove-to-cart-btn">Remove</button>
+          </article>
+        </div>
+
+
+      </template>
+
+
+      <section class="productCartTotalElem">
+        <div class="productCartTotalElement">
+          <p class="heading">Selected Offer Summary</p>
+          <div class="productOrderTotal">
+            <div class="subto">
+              <p>Sub Total:</p>
+              <p class="productSubTotal">0</p>
+            </div>
+            <div class="subta">
+              <p>Tax:</p>
+              <p class="productTax">50/-</p>
+            </div>
+            <hr />
+            <div class="finalt">
+              <p>Final Total:</p>
+              <p class="productFinalTotal">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- main cart Elements Start-->
+  <!-- footer start-->
+  <footer>
+    <div class="footer-sec">
+      <div class="foot1">
+        <a href="#"><img src="src/logo.png"></a>
+        <p class="foot-para">Welcome to Honline, your ultimate destination for cutting-edge gadgets!</p>
+      </div>
+
+      <div class="same-foot">
+        <div class="foot2">
+
+          <h6>SHOPPING</h6>
+          <a href="#">Computer Store</a>
+          <a>LapTop Store</a>
+          <a>Accessories</a>
+          <a>sales & Discount</a>
+
+
+        </div>
+
+        <div class="foot2">
+
+          <h6>SHOPPING</h6>
+          <a href="#">Contact Us</a>
+          <a href="#">Payment Method</a>
+          <a href="#">Delivery</a>
+          <a href="#">Return and Exchange</a>
+
+
+        </div>
+      </div>
+
+      <div class="foot3">
+        <h5>NEWSLETTER</h5>
+        <p>Be the first to know about new
+          arrivals, sales & promos!</p>
+      </div>
+    </div>
+
+  </footer>
+  <!--footer end  -->
+  <script type="module" src="./src/showAddToCards.js"></script>
+</body>
+
+</html>

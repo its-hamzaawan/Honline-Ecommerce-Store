@@ -1,0 +1,68 @@
+[
+    
+    {
+        "id" : 1,
+        "name" : "LapTop",
+        "category" : "Computers",
+        "brand" : "ExampleBrand",
+        "price" : 999.9,
+        "stock" : 50,
+        "description" : "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
+        "image" : "/images/laptop.png.png"
+    },
+
+    {
+        "id" : 2,
+        "name" : "SmartPhones",
+        "category" : "Mobiles",
+        "brand" : "TechGadgets",
+        "price" : 499.9,
+        "stock" : 100,
+        "description" : "Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage, and a 4000mAh battery.",
+        "image" : "/images/iphone.png.png"
+    },
+
+    {
+        "id" : 3,
+        "name" : "WireLess HeadPhones",
+        "category" : "Audio",
+        "brand" : "SoundBeats",
+        "price" : 149.9,
+        "stock" : 30,
+        "description" : "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.",
+        "image" : "/images/headphone.png.png"
+    },
+
+    {
+        "id" : 4,
+        "name" : "Watches",
+        "category" : "Wearables",
+        "brand" : "FitTech",
+        "price" : 199.9,
+        "stock" : 20,
+        "description" : "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color.",
+        "image" : "/images/watch.png.png"
+    },
+
+    {
+        "id" : 5,
+        "name" : "Speakers",
+        "category" : "Audio",
+        "brand" : "AudioTemper",
+        "price" : 149.9,
+        "stock" : 30,
+        "description" : "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.",
+        "image" : "/images/speakers.png.png"
+    },
+
+    {
+        "id" : 6,
+        "name" : "Television",
+        "category" : "Video",
+        "brand" : "SamSung",
+        "price" : 199.9,
+        "stock" : 20,
+        "description" : "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color.",
+        "image" : "/images/tv.png.png"
+    }
+]

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.cdnfonts.com/css/empire" rel="stylesheet">
+<title>Ecommerce Website</title>
+<style>
+    body{
+        min-height: 50vh;
+    }
+    .contact-section{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .header h1{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+        padding-top: 20px;
+    } 
+    .header p{
+        color: #666;
+        margin-bottom: 40px;
+    }
+    .contact-container{
+        display: flex;
+        gap: 40px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+
+    }
+
+    .contact-form{
+        flex: 1;
+    }
+    .input-group{
+        margin-bottom: 20px;
+    }
+    .input-group label{
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        color: #444;
+    }
+
+    .input-group input,
+    .input-group textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fcfcfc;
+        font-size: 1rem;
+    }
+
+    .send-btn{
+        background-color: #6c757d;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s;
+
+
+    }
+    .send-btn:hover{
+        background-color: #5a6268;
+    }
+
+    .map-container{
+       flex: 1;
+       min-height: 450px;
+       border-radius: 15px;
+       overflow: hidden;
+    }
+
+
+    @media (max-width:768px){
+        .contact-container{
+            flex-direction: column;
+        }
+        .map-container{
+            min-height: 300px;
+        }
+    }
+
+</style>
+
+</head>
+<body class="home">
+  <header class="section-navbar">
+    <section class="top-txt">
+      <div class="head_container">
+        <p class="head_text">Free shipping, 30-day return or refund guarantee.</p>
+      </div>
+      <div class="sign_in_up">
+        <a href="#">SIGN IN</a>
+        <a href="#">SIGN UP</a>
+      </div>
+    </section>
+    <div class="main-container">
+     <div class="navbar-brand">
+      <a href="index.html"> <img src="src/logo.png" class="logo" width="120px" height="auto"></a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li class="nav-item">
+          <a href="/" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="addTocart.html" class="nav-cart" id="cartValue"> <i class="fa-solid fa-cart-arrow-down">0</i></a>
+        </li>
+      </ul>
+    </nav>
+
+     
+
+    </div>
+  </header>
+
+ <section class="contact-section">
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Us. We are always here to help you.</p>
+    </div>
+
+    <div class="contact-container">
+        <form id="contactForm" class="contact-form">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31525.16408520004!2d72.44877027508129!3d32.25994931964117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3921124adfd90575%3A0xed8a9742165da07a!2sShahpur%20Saddar%2C%20Pakistan!5e1!3m2!1sen!2s!4v1775675529577!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+ </section>
+
+  <footer class="footer-sec">
+    
+    <div class="foot1">
+      <a href="#"><img src="src/logo.png"></a>
+      <p class="foot-para">Welcome to Honline, your ultimate destination for cutting-edge gadgets!</p>
+    </div>
+
+    <div class="same-foot">
+    <div class="foot2">
+
+      <h6>SHOPPING</h6>
+      <a href="#">Computer Store</a>
+      <a>LapTop Store</a>
+      <a>Accessories</a>
+      <a>sales & Discount</a>
+     
+    
+    </div>
+
+    <div class="foot2">
+      
+      <h6>SHOPPING</h6>
+      <a href="#">Contact Us</a>
+      <a href="#">Payment Method</a>
+      <a href="#">Delivery</a>
+      <a href="#">Return and Exchange</a>
+     
+    
+    </div>
+  </div>
+
+  <div class="foot3">
+  <h5>NEWSLETTER</h5>
+      <p>Be the first to know about new
+        arrivals, sales & promos!</p>
+    </div>
+ 
+
+  </footer>
+  
+
+  <script type="module" src="./src/main.js" ></script>
+</body>
+</html>
