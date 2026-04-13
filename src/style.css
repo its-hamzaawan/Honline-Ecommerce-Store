@@ -933,6 +933,13 @@ border-top-right-radius: 12px;
     width: 100%;
     padding: 10px 15px;
   }
+  .main-hero-heading{
+    color: rgb(255, 246, 246);
+  }
+  .menu{
+    font-size: 11px;
+    
+  }
 
   .logo {
     flex-shrink: 0;
@@ -954,7 +961,10 @@ border-top-right-radius: 12px;
     display: flex;
     flex-direction: row;
   }
-
+   .nav-cart{
+    border-radius: 90%;
+    padding:0;
+   }
   /* ===== HERO ===== */
   .main-container-grid {
     grid-template-columns: 1fr;
