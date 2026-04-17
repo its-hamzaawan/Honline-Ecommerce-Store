@@ -7,7 +7,7 @@ import { showProductContainer } from "./homeProducts.js";
 // console.log(products);
 async function loadProducts(){
     try{
-        const response = await fetch('/api/products.json');
+        const response = await fetch('./api/products.json');
         const products = await response.json();
         console.log(products);
         showProductContainer(products)
